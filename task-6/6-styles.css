@@ -1,0 +1,141 @@
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica, sans-serif;
+
+    a { text-decoration:  none;}
+
+    li { list-style-type: none;}
+}
+
+header {
+    display: flex;
+    padding: 20px 60px;
+    align-items: center;
+    background-color: rgb(155, 65, 228);
+    justify-content: space-between;
+
+    .logo-content {
+        p {
+            color: #FFF;
+            cursor: pointer;
+            font: bold 1.5em Helvetica, sans-serif;
+        }
+    }
+
+    nav {
+    
+        ul {
+            gap: 50px;
+            display: flex;
+            align-items: center;
+
+            li {
+                order: 0;                   
+                color: #FFF;
+                flex-grow: 1;             
+                flex-shrink: 1;          
+                align-self: auto; 
+                cursor: pointer;
+            }
+        }
+    }
+
+    .bars-menu {
+        display: none;
+    }
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    /* Title Section */
+
+    .title-section {
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h1 {
+            font: bold 2.5em Helvetica, sans-serif;
+        }
+        p {
+            font-style: italic;
+            text-align: center;
+            max-width: 600px;
+        }
+    }
+
+    /* Cards Section */
+
+    .cards-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 100px;
+
+        .card-content {
+            width: 300px;
+            height: 400px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+
+            img {
+                max-width: 100px;
+            }
+        }
+    }
+}
+
+footer {
+    color: #FFF;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(155, 65, 228);
+}
+
+
+@media only screen and (max-width: 884px) {
+    header {
+        .logo-content {
+            p {
+                font-size: 1.15em;
+            }
+        }
+        nav {
+            display: none;
+        }
+
+        .bars-menu {
+            color: #FFF;
+            cursor: pointer;
+            display: initial;
+            font: normal 1.5em Helvetica, sans-serif;
+        }
+    }
+
+    main {
+        .title-section {
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: .9em;
+            }
+        }
+    }
+}

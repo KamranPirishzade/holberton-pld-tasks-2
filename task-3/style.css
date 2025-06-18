@@ -1,12 +1,27 @@
+*{
+    text-align: center;
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 30vw;
+  width: 20vw;
   height: 500px;
+  background-color: rgb(29, 43, 26);
+  color: white;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+    font-size: 5rem;
 }
 
 .card img{
-    height: 80%;
+    height: 70%;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
 }
 
 .card:hover {
@@ -19,6 +34,6 @@
 
 .container-cards{
     display: flex;
-    /* gap: 200px; */
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
 }

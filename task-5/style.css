@@ -1,0 +1,39 @@
+
+*{
+    text-align: center;
+}
+
+.container{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+.card{
+
+    border: 3px solid aquamarine;
+    border-radius: 80px;
+    padding: 1rem 2rem;
+    font-size: 24px;
+    transition: background-color ease 0.3s;
+
+}
+
+.card:first-child {
+    flex: 2 1 0%;
+}
+.card:nth-child(2) {
+    flex: 1 1 0%;
+}
+.card:last-child {
+    flex: 2 1 0%;
+}
+
+.card:hover{
+    background-color: aquamarine; 
+}

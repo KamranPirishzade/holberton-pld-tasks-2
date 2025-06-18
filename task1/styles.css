@@ -1,0 +1,31 @@
+/* img {
+    float: right;
+
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+}
+
+div.parent {
+    border: 2px solid black;
+} */
+
+
+.parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+img{
+    flex: 1;
+}
+
+p{
+    width: 50vw;
+    font-size: 36px;
+}
+
